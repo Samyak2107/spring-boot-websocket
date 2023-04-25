@@ -19,6 +19,6 @@ public class Config implements WebSocketMessageBrokerConfigurer {
 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-        registry.addEndpoint("/server1").setAllowedOrigins("http://localhost:4200", "http://localhost:4200/", "http://localhost:57162", "http://localhost:57162/").withSockJS();  //to connect with server /server1
+        registry.addEndpoint("/server1").setAllowedOrigins("http://localhost:4200", "http://localhost:4200/", "http://localhost:62053", "http://localhost:62053/", "https://st.jiovcip.jiolabs.com/vcip-customer/", "https://st.jiovcip.jiolabs.com/vcip-demo/").withSockJS();  //to connect with server /server1
     }
 }
